@@ -1,0 +1,238 @@
+$color: linear-gradient(to left, #C89AFC, #7C6AFA);
+$font-family-for-heading: "Raleway";
+$font-family-for-a: "Raleway";
+$font-family-for-text: "Roboto";
+$font-size-h1: 48px;
+$font-size-h2: 30px;
+$fon-size-text: 16px;
+$margin-text: 20px;
+body {
+  background: #001134;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+h1, h2 {
+  font-family: $font-family-for-heading, monospace;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  margin-bottom: $margin-text;
+
+}
+
+h2 {
+  font-size: $font-size-h2;
+  margin-bottom: $margin-text;
+
+}
+
+span, ul {
+  font-family: $font-family-for-text, monospace;
+  font-size: $fon-size-text;
+
+}
+
+ul {
+  list-style-image: url('../image/Rectangle 30.png');
+
+  li {
+    line-height: 33px;
+    padding-left: 1em;
+  }
+}
+
+a {
+  font-family: $font-family-for-a, monospace;
+  font-size: $fon-size-text;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background: $color;
+  border: 1px;
+  width: 279px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  margin-top: $margin-text;
+
+}
+
+button:hover {
+  box-shadow: 0 0 10px #C89AFC;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 1200px;//почему ты не работаешь нормально
+  z-index: 1000000000;
+  background: rgba(0, 17, 52, 0.4);
+
+  .logo {
+    margin-left: 70px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    margin-right: 70px;
+    a {
+      margin: 10px;
+    }
+    a:hover {
+      font-size: $fon-size-text+2px;
+    }
+  }
+}
+
+main {
+  #home {
+    height: 960px;
+    background: url("../image/Group 35.png") no-repeat;
+
+    .content {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 120px;
+      height: 100%;
+
+      .content-main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .invite {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          top: 0;
+          width: 45%;
+          height: 400px;
+
+          span {
+            line-height: 22px;
+          }
+        }
+
+        img {
+          width: 50%;
+        }
+
+      }
+
+      .list {
+        margin: 30px 0;
+      }
+
+      .welcome {
+        background: $color;
+        width: 706px;
+        border-radius: 11px;
+        padding: 24px 32px 24px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 60px auto auto;
+      }
+    }
+
+  }
+  #activity, #members, #leaders {
+    .content {
+      padding: 50px 70px;
+    }
+  }
+  #activity {
+    height: 438px;
+    .content {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      .content-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        span {
+          margin: 15px 0;
+        }
+      }
+      .img-lamp {
+        width: 50%;
+        text-align: center;
+
+      }
+    }
+  }
+  #leaders {
+    height: 593px;
+    background: #121F4D url("../image/Group 36.png") no-repeat center;
+  }
+  #members {
+    height: 437px;
+  }
+}
+
+.im-leaders, .im-members {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top:50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  div {
+    width: 30%;
+  }
+  a {
+    text-align: center;
+    width: 55%;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
